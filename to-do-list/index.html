@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+</head>
+<body>
+	<main>
+		<h1>Todo List</h1>
+		<form class="to-do-list">
+			<input type="text" class="listName">
+			<button>adicionar</button>
+		</form>
+		<div class="list">
+			<ul></ul>
+		</div>
+	</main>
+
+	<script>
+
+		let toDoList = document.querySelector('.to-do-list');
+		let inputListName = document.querySelector('.to-do-list .listName');
+		let list = document.querySelector('.list ul');
+
+		toDoList.addEventListener('submit', (e) => {
+
+			e.preventDefault();
+
+			let listName = inputListName.value;
+			list.innerHTML += `<li><input type="checkbox" /> <span>${listName}</span></li>`;
+			console.log(listName);
+		});
+
+	</script>
+
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>
