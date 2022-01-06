@@ -1,6 +1,6 @@
 body { font-family: arial;}
 main { margin:  0 auto; max-width: 400px; text-align: center; width: 100%;}
-h1 { text-align: center;s}
+h1 { text-align: center;}
 
 .list { text-align: left; }
 .list ul { display: inline-block; list-style: none; margin-top: 30px;}
