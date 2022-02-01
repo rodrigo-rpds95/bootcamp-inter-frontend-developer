@@ -34,7 +34,6 @@ header .logo {
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size: 40px;
-    margin-left: 5px;
     text-transform: uppercase;
 }
 
@@ -46,6 +45,10 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+header .boxHeader span {
+    display: none;
 }
 
 .filme-principal {
