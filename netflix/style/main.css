@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body { 
     background: var(--preta);
     color: #fff;
@@ -121,13 +125,13 @@ header .boxHeader span {
     height: 100%;
 }
 
-.carrousel-top {
+.carrousel-filmes.carrousel-top {
     margin-top: -80px;
+    padding-top: 0;
 }
 
 .carrousel-filmes {  
-    margin-bottom: 50px;
-    padding: 0 30px;
+    padding: 50px 30px 0;
     position: relative;
     width: 100%;
 }
